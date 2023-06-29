@@ -1,0 +1,531 @@
+/*sorunlar:
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+}
+
+/*----HEADER----*/
+.main {
+    /*!Arkaplan resmi vermek ve hizalamak için kullandığım kodlar*/
+    border: transparent 1px solid;
+    /*?border vermeyince resmi ortalaıyor*/
+    position: relative;
+    height: 75vh;
+    background: radial-gradient(50% 50%, rgba(51, 10, 10, 0.7), rgb(5, 5, 21, 0.6)), url(./assets/bg21.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: max-content;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #39053163;
+    margin: 0;
+    width: 100%;
+
+
+}
+
+.top-left {
+    display: flex;
+    color: white;
+    gap: 5px;
+    font-size: 25px;
+    align-items: center;
+
+}
+
+.top-left a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.top-left a span {
+    color: red;
+}
+
+.top-right {
+    display: flex;
+    gap: 10px;
+}
+
+.top-right-links a {
+
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+
+}
+
+#iconm {
+    display: none;
+    position: absolute;
+
+}
+
+.mid {
+    height: 400px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: auto;
+    margin-right: 40%;
+    width: 700px;
+    gap: 10px;
+}
+
+.mid h1 {
+    color: white;
+    font-size: 46px;
+    font-family: "Russo One", sans-serif;
+}
+
+.mid p {
+    font-family: "poppins";
+    color: #c0d666;
+    font-size: 34px;
+    font-weight: 600;
+    width: auto;
+    animation-name: anime1;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+.mid button {
+    padding: 7px;
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    border: 2px solid #cab2bb;
+    margin: 5px 0;
+}
+
+.mid button:hover {
+    transition: 0.2s;
+    border: 2px solid rgb(94, 17, 94);
+    border-radius: 10px;
+}
+
+.bot {
+    position: absolute;
+    background-color: #39053163;
+    left: 0;
+    padding: 15px;
+    gap: 20px;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation-name: anime2;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+.bot img {
+    width: 50px;
+}
+
+@keyframes anime2 {
+    0% {
+        transform: translateX(0%)
+    }
+
+    50% {
+        transform: translateX(2%)
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+}
+
+/*----YORUMLAR----*/
+
+.yorumlar {
+    margin-top: 100px;
+    font-family: "poppins";
+    margin-bottom: 100px;
+
+}
+
+.yorum-head {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 36px;
+}
+
+.yorum-cards {
+
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.yorum-card {
+    padding: 15px;
+    width: 97%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 30px;
+
+
+}
+
+.yorum-card:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+
+}
+
+.yorum-card-top {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.yorum-card-top-left img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.yorum-card-top-righ-yazi {
+    font-weight: 900;
+}
+
+.yorum-card-mid {
+    margin-bottom: 50px;
+
+}
+
+.yorum-card-bot {
+    border: 2px purple solid;
+    border-radius: 30px;
+    padding: 7px 15px;
+    width: fit-content;
+}
+
+
+/*----HAKKIMDA----*/
+.hakkimda {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: 90%;
+    margin: 100px auto;
+
+}
+
+.hakkimda-top h2 {
+    font-size: 36px;
+}
+
+.hakkimda-top p {
+    color: #c13e73;
+}
+
+.hakkimda-bot {
+    display: flex;
+    align-items: center;
+}
+
+.hakkimda-bot-left {
+    width: fit-content;
+}
+
+.hakkimda-bot-left img {
+    border-radius: 10px;
+}
+
+.hakkimda-bot-right {
+    margin-left: 100px;
+    text-align: left;
+    height: fit-content;
+}
+
+.hakkimda-bot-right h2 {
+    color: #c13e73;
+    font-size: 30px;
+}
+
+.hakkimda-bot-right button {
+    margin-top: 20px;
+    background: linear-gradient(to right, #c13e73 70%, rgb(105, 52, 61));
+    font-family: "poppins";
+    padding: 9px 25px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*----BenimHakkımda----*/
+.bnmhakkimda {
+    width: 90%;
+    margin: 10px auto;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.bh-left {
+    width: 50%;
+
+}
+
+.bh-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.bh-left span {
+    color: #500523;
+}
+
+.bh-left h3 {
+    margin-bottom: 20px;
+}
+
+.bh-left ul li a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+.bh-left ul {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.bh-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bh-right fieldset {
+    border: none;
+}
+
+.bh-right input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    background-color: #2a2a2a;
+    color: aliceblue;
+    border-radius: 7px;
+}
+
+.bh-right textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    background-color: #2a2a2a;
+    font-family: "Poppins", sans-serif;
+    border-radius: 7px;
+
+}
+
+.bh-right fieldset button {
+    padding: 7px;
+    border: 4px solid #500523;
+    background-color: transparent;
+    font-size: 20px;
+    width: 200px;
+    font-weight: 550;
+    border-radius: 10px;
+    margin-left: 40%;
+    cursor: pointer;
+
+}
+
+/*----FOOTER----*/
+.footer {
+    margin-top: 100px;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    font-family: "poppins", sans-serif;
+    height: 300px;
+
+}
+
+.footer-left {
+
+    margin: 50px 50px 0 50px;
+    height: fit-content;
+}
+
+.f-l-mid {
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-right {
+
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sec1-head p {
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sec1 ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column
+}
+
+.sec1 ul a {
+
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding-left: 150px;
+        position: relative;
+    }
+/*!İkonun üstüne gelince açılan menü*/
+/*!-----------------------------------*/
+    .top-right:hover .top-right-links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #ccc;
+        right: 0;
+        margin-right: 10px;
+        font-size: 30px;
+        border: 3px solid #c13e73;
+        border-radius: 10px;
+        
+
+    }#iconm {
+        display: flex;
+        font-size: 25px;       
+
+    }
+
+    .top-right-links a{
+        color: #2a2a2a;
+    }
+    .top-right-links a:hover{
+        background-color: red;
+    }
+    
+    .top-right-links {
+        display: none;
+        
+    }
+/*!^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+    .yorum-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hakkimda-bot {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .hakkimda-bot-left {
+        margin: auto;
+    }
+
+    .hakkimda-bot-right {
+        margin: auto;
+        width: 58.8%;
+    }
+
+    .bnmhakkimda {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .bh-left {
+        margin: auto;
+    }
+
+    .bh-right {
+        margin: 30px auto;
+    }
+
+    .bh-right fieldset button {
+        margin: auto;
+    }
+
+    .footer-left {
+        width: 30%;
+    }
+
+    .footer-right {
+        width: 70%;
+    }
+}
